@@ -74,6 +74,11 @@
 		FC0082A8BC2F40069D673AD5 /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C4991CB62A4998A7FEB55C /* CDVWKInAppBrowser.m */; };
 		FF9FB9C40C73467F80F494CE /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17C0D2E0B75142B0971ED418 /* Roboto-Medium.ttf */; };
 		BA7EB9D30A6B4C1ABBEF33C1 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0233816B14A99BB29FF36 /* CDVStatusBar.m */; };
+		D45AE382AAE0455AA3E97383 /* CDVWKWebViewEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 698BA589F1C44F5AB489DD5C /* CDVWKWebViewEngine.m */; };
+		E638BD851F5940F7AB291000 /* CDVWKWebViewUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8081F26B1A7D419E9EE1F083 /* CDVWKWebViewUIDelegate.m */; };
+		D9A0A8F578EF4FF5B7C15F4D /* CDVWKProcessPoolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE986BF7748464A9BC22C16 /* CDVWKProcessPoolFactory.m */; };
+		9A33847034A8404CB3464C93 /* IONAssetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C5513FD2B4B24F8CBCA9A360 /* IONAssetHandler.m */; };
+		E76F081573B144E181E1DAD3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED35201AA5D440CC98E527CE /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +232,15 @@
 		FC547D9ABB244804B9B38F51 /* OUTLINE_ITEM.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = OUTLINE_ITEM.h; path = com.radaee.cordova/OUTLINE_ITEM.h; sourceTree = "<group>"; };
 		A7D0233816B14A99BB29FF36 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		01141C28906345BAB25702F6 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		698BA589F1C44F5AB489DD5C /* CDVWKWebViewEngine.m */ = {isa = PBXFileReference; name = "CDVWKWebViewEngine.m"; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8081F26B1A7D419E9EE1F083 /* CDVWKWebViewUIDelegate.m */ = {isa = PBXFileReference; name = "CDVWKWebViewUIDelegate.m"; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		2CE986BF7748464A9BC22C16 /* CDVWKProcessPoolFactory.m */ = {isa = PBXFileReference; name = "CDVWKProcessPoolFactory.m"; path = "cordova-plugin-ionic-webview/CDVWKProcessPoolFactory.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		C5513FD2B4B24F8CBCA9A360 /* IONAssetHandler.m */ = {isa = PBXFileReference; name = "IONAssetHandler.m"; path = "cordova-plugin-ionic-webview/IONAssetHandler.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		0D8CABBE053C484182F97B1A /* CDVWKWebViewEngine.h */ = {isa = PBXFileReference; name = "CDVWKWebViewEngine.h"; path = "cordova-plugin-ionic-webview/CDVWKWebViewEngine.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		65FC446C7F974BDD8B9B53BA /* CDVWKWebViewUIDelegate.h */ = {isa = PBXFileReference; name = "CDVWKWebViewUIDelegate.h"; path = "cordova-plugin-ionic-webview/CDVWKWebViewUIDelegate.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7123E94E6B4043A3BD8E01EB /* CDVWKProcessPoolFactory.h */ = {isa = PBXFileReference; name = "CDVWKProcessPoolFactory.h"; path = "cordova-plugin-ionic-webview/CDVWKProcessPoolFactory.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		DC84EBEF42C0421DB9FEEA11 /* IONAssetHandler.h */ = {isa = PBXFileReference; name = "IONAssetHandler.h"; path = "cordova-plugin-ionic-webview/IONAssetHandler.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		ED35201AA5D440CC98E527CE /* WebKit.framework */ = {isa = PBXFileReference; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +254,7 @@
 				D8461DBCF06C4CE3A39A9C99 /* CoreMedia.framework in Frameworks */,
 				C6E1602BED9C42D8A7AC3946 /* QuartzCore.framework in Frameworks */,
 				F108C6502EF14ED8A4950E21 /* libc++.dylib in Frameworks */,
+				E76F081573B144E181E1DAD3 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +340,7 @@
 				C9D7B3B376AD4DC2A99CADB2 /* CoreMedia.framework */,
 				232589B3D86F4E46A58359F8 /* QuartzCore.framework */,
 				02310967C25B4EF987FE1047 /* libc++.dylib */,
+				ED35201AA5D440CC98E527CE /* WebKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -442,6 +458,14 @@
 				3CB4F9BCB28D462C865967E8 /* CDVAssetLibraryFilesystem.h */,
 				A7D0233816B14A99BB29FF36 /* CDVStatusBar.m */,
 				01141C28906345BAB25702F6 /* CDVStatusBar.h */,
+				698BA589F1C44F5AB489DD5C /* CDVWKWebViewEngine.m */,
+				8081F26B1A7D419E9EE1F083 /* CDVWKWebViewUIDelegate.m */,
+				2CE986BF7748464A9BC22C16 /* CDVWKProcessPoolFactory.m */,
+				C5513FD2B4B24F8CBCA9A360 /* IONAssetHandler.m */,
+				0D8CABBE053C484182F97B1A /* CDVWKWebViewEngine.h */,
+				65FC446C7F974BDD8B9B53BA /* CDVWKWebViewUIDelegate.h */,
+				7123E94E6B4043A3BD8E01EB /* CDVWKProcessPoolFactory.h */,
+				DC84EBEF42C0421DB9FEEA11 /* IONAssetHandler.h */,
 			);
 			name = Plugins;
 			path = "WKWebView IAB Test/Plugins";
@@ -627,6 +651,10 @@
 				758B86BB29E247DDAF7D8FD0 /* CDVLocalFilesystem.m in Sources */,
 				5EE0CCE2F196494E900DDA7F /* CDVAssetLibraryFilesystem.m in Sources */,
 				BA7EB9D30A6B4C1ABBEF33C1 /* CDVStatusBar.m in Sources */,
+				D45AE382AAE0455AA3E97383 /* CDVWKWebViewEngine.m in Sources */,
+				E638BD851F5940F7AB291000 /* CDVWKWebViewUIDelegate.m in Sources */,
+				D9A0A8F578EF4FF5B7C15F4D /* CDVWKProcessPoolFactory.m in Sources */,
+				9A33847034A8404CB3464C93 /* IONAssetHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,5 +2,6 @@
     "libz.tbd": 1,
     "CoreMedia.framework": 1,
     "QuartzCore.framework": 1,
-    "libc++.dylib": 1
+    "libc++.dylib": 1,
+    "WebKit.framework": 1
 }
