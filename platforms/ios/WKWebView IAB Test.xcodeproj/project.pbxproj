@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0160E44EAEEA4BFD86A4F421 /* RDLoPDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E168941A03B342D48F5ED699 /* RDLoPDFViewController.m */; };
+		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
+		04F0D97DA21248D5ACA895FD /* PDFObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 29249E02B0B345ACBB30F5C3 /* PDFObjc.m */; };
+		120F874D6D3448829D4C73B6 /* PDFThumbView.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5D3F4DA9DC4B44890F0BF8 /* PDFThumbView.m */; };
+		17B6667121224BA3B6D85385 /* RDVCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF453E384CC4E868F50A2B5 /* RDVCache.m */; };
+		1824F554536C4509B5F37370 /* PDFLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 797F9FC682E94A8FBA2E3C18 /* PDFLayoutView.m */; };
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		21C0B98CD5C74DFB92433D50 /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3E285AC68F354FD9AC5CC297 /* Roboto-RegularItalic.ttf */; };
+		269B3B40AF15489586B4DFE2 /* libRDPDFLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5741E849B3094611AD308635 /* libRDPDFLib.a */; };
+		27CC5DD76D554E729C944D45 /* RDVGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA99C12E4CE4E92B03F2193 /* RDVGlobal.m */; };
+		2DA78AD817484984A14F2F45 /* SignatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593C7DF751334B3786F35F52 /* SignatureViewController.m */; };
+		2F8A890EC4DF49F6B59F99D3 /* RDVPage.m in Sources */ = {isa = PBXBuildFile; fileRef = A985752D31824E7084892038 /* RDVPage.m */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		33607B1E916E453499412ACC /* RDVSel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F27DE3E0AA14CE9B6AE2882 /* RDVSel.m */; };
+		367E1C3AA2E5441EA80375E4 /* RDExtendedSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E109CE9FC0F4E52A9267B2A /* RDExtendedSearch.m */; };
+		4F6FF38C38044DABA4833BB6 /* OutLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D2501188944853920FEE67 /* OutLineViewController.m */; };
+		4FAB0D89E5C849E181E817AA /* RDMoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AD71F449B54938818BB150 /* RDMoreTableViewController.m */; };
+		504BB2A655F74819A3622538 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB0CE9BAD8146758D737890 /* CDVInAppBrowser.m */; };
+		51A8D66B6FFC484AB95ED63B /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB3BD91C8E349569B7A1B21 /* CDVDevice.m */; };
+		56D8F04D007D40A69EEF2849 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41CB51BF01B343C185EF7E94 /* Roboto-Light.ttf */; };
+		5AF3D7335FD64FAEBE39DBD0 /* CDVInAppBrowserOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E28D671F5C44843B88B0F6C /* CDVInAppBrowserOptions.m */; };
+		5C6CE143B09E46D4BD95C8E3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49CF28859FC3440C865DDBF2 /* Roboto-Regular.ttf */; };
+		5D787AA1A9334F6EB487D48E /* PDFGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 06AB3F7C2D8A4513A12B054B /* PDFGridView.m */; };
+		5EE0CCE2F196494E900DDA7F /* CDVAssetLibraryFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18743F5F7B0D463BA9C31C31 /* CDVAssetLibraryFilesystem.m */; };
+		68C5D636F53B4579BED4BFE9 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5D0A307C0034882899E7EE9 /* Roboto-Black.ttf */; };
+		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
+		6BAD3BDB44DC44AABFD82F26 /* CDVInAppBrowserNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0B8134359146EC848736CC /* CDVInAppBrowserNavigationController.m */; };
+		6C3E971703334BA0BAD34783 /* ViewModeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D12A4EDD3274F38BFEBCD28 /* ViewModeTableViewController.m */; };
+		722A49C8A45F42358806F5A0 /* DrawModeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B22C00FED07C45A0B5825CE7 /* DrawModeTableViewController.m */; };
+		758B86BB29E247DDAF7D8FD0 /* CDVLocalFilesystem.m in Sources */ = {isa = PBXBuildFile; fileRef = F48A909E01304DEB97B089C5 /* CDVLocalFilesystem.m */; };
+		82EC46E0247B4A6E9F76F661 /* BookmarkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9483721639C948998E19A03B /* BookmarkTableViewController.m */; };
+		851C9CD1E9EF47B798125933 /* PDFHttpStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C2BDA096574D3CBF203A51 /* PDFHttpStream.m */; };
+		86C3C91D3C054607BFC70C53 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 162983D6A489485CB3B2EC4A /* libz.tbd */; };
+		8A654BCDC669412CA42C8DA2 /* ReaderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E78D20D0C59D4E51B1827ADE /* ReaderHandler.m */; };
+		9004342E2F1D450398607B3B /* CDVWKInAppBrowserUIDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5A9E707EE147C19DAE7989 /* CDVWKInAppBrowserUIDelegate.m */; };
+		9548DFD87C5A4D0F8A8967BA /* RDVLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D23A290A6FBB4838BB07720B /* RDVLayout.m */; };
+		9A8106841C8840D282706965 /* RDFormManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BCAE200CAF594BD18BA8A650 /* RDFormManager.m */; };
+		9AFBD500EC7742CF8E9DB4D7 /* OUTLINE_ITEM.m in Sources */ = {isa = PBXBuildFile; fileRef = 533E9339A9954C0BA2D49D52 /* OUTLINE_ITEM.m */; };
+		A22E520F53BE428887ED425E /* CDVUIInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 771D4C6C02F54B6E93B4B8FE /* CDVUIInAppBrowser.m */; };
+		A2962EC459EB4C038FBF2D5E /* TextAnnotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083B3743F2384948BFB606A0 /* TextAnnotViewController.m */; };
+		A4E8806A387147DCA3D5235D /* RDAnnotListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1942A68289BB45FFA615B06E /* RDAnnotListViewController.m */; };
+		AC41090D04BE4E1F9BEFA120 /* PDFReflowView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFD9ABB2D915462E8934577D /* PDFReflowView.m */; };
+		B246CF5545F44295B3E80A18 /* RDVThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A74DB56A23B400693ED3396 /* RDVThread.m */; };
+		B8687C50C0704C84A344BD98 /* fdat in Resources */ = {isa = PBXBuildFile; fileRef = CFB153290168409392BE766D /* fdat */; };
+		C1FB3CA4711E4FE1826BE8F1 /* RDToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAE92A2912C4077AFDB49B1 /* RDToolBar.m */; };
+		C438FB03343B44F7B725B129 /* RDVCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E49CD2458F84E76940B6E6C /* RDVCanvas.m */; };
+		C6E1602BED9C42D8A7AC3946 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 232589B3D86F4E46A58359F8 /* QuartzCore.framework */; };
+		CA4E8FE3220D40E1A96EE2A1 /* CDVFile.m in Sources */ = {isa = PBXBuildFile; fileRef = A81DD46907C4457ABD3E408C /* CDVFile.m */; };
+		CB84165C932E4F85B026808C /* RDMoreTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFC554FFABAE433AAD9CD3E0 /* RDMoreTableViewController.xib */; };
+		CF9066364EC644079DF1E04A /* ActionStackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E8586A2E6E274396BCBFE0A6 /* ActionStackManager.m */; };
+		D21380DDAA334558BBF178F8 /* UviSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6B84DD6055409B91B624B1 /* UviSignatureView.m */; };
+		D48531741B174D12883BAFEF /* RDUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 836BC4DCCFA6421F8157B345 /* RDUtils.m */; };
+		D8461DBCF06C4CE3A39A9C99 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D7B3B376AD4DC2A99CADB2 /* CoreMedia.framework */; };
+		E1DF9E6FB6EC48E39D2A6285 /* RDVFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCA737A58D44344BEB6109F /* RDVFinder.m */; };
+		E402D4E4268644B3ACD52CD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91AFEF4FFAFA4B5691C1C524 /* Images.xcassets */; };
+		ECD2CA97AD8D475C997F9709 /* cmaps in Resources */ = {isa = PBXBuildFile; fileRef = 27C26DC0CDEF45D6A762B40E /* cmaps */; };
+		F108C6502EF14ED8A4950E21 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 02310967C25B4EF987FE1047 /* libc++.dylib */; };
+		F5C89622B2904551A729750E /* SearchResultTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37993838634A4B15A5DC4119 /* SearchResultTableViewController.m */; };
+		F907D9BA141148429D768C63 /* PDFOffScreenView.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1024D7249D48DF974496C2 /* PDFOffScreenView.m */; };
+		FB98A11812BA44D48DE266A3 /* RadaeePDFPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DC1B1C81C8942679DAAA89C /* RadaeePDFPlugin.m */; };
+		FBA0078B87F1407F9F2342E8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 032EC096F8B04D47AC1B4DCE /* Roboto-Bold.ttf */; };
+		FC0082A8BC2F40069D673AD5 /* CDVWKInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C4991CB62A4998A7FEB55C /* CDVWKInAppBrowser.m */; };
+		FF9FB9C40C73467F80F494CE /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 17C0D2E0B75142B0971ED418 /* Roboto-Medium.ttf */; };
+		BA7EB9D30A6B4C1ABBEF33C1 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D0233816B14A99BB29FF36 /* CDVStatusBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		907D8123214C687600058A10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
+			remoteInfo = Cordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "WKWebView IAB Test/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		02310967C25B4EF987FE1047 /* libc++.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		032EC096F8B04D47AC1B4DCE /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		06AB3F7C2D8A4513A12B054B /* PDFGridView.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PDFGridView.m; path = com.radaee.cordova/PDFGridView.m; sourceTree = "<group>"; };
+		083B3743F2384948BFB606A0 /* TextAnnotViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = TextAnnotViewController.m; path = com.radaee.cordova/TextAnnotViewController.m; sourceTree = "<group>"; };
+		088023EBE4894BAABD6C29F5 /* ViewModeTableViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ViewModeTableViewController.h; path = com.radaee.cordova/ViewModeTableViewController.h; sourceTree = "<group>"; };
+		0ECC36DA2AF44DB898256D15 /* RDLoPDFViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDLoPDFViewController.h; path = com.radaee.cordova/RDLoPDFViewController.h; sourceTree = "<group>"; };
+		15F3A8E914A648F9AD2ADB35 /* PDFLayoutView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PDFLayoutView.h; path = com.radaee.cordova/PDFLayoutView.h; sourceTree = "<group>"; };
+		162983D6A489485CB3B2EC4A /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		17C0D2E0B75142B0971ED418 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		18743F5F7B0D463BA9C31C31 /* CDVAssetLibraryFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVAssetLibraryFilesystem.m; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.m"; sourceTree = "<group>"; };
+		1942A68289BB45FFA615B06E /* RDAnnotListViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDAnnotListViewController.m; path = com.radaee.cordova/RDAnnotListViewController.m; sourceTree = "<group>"; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* WKWebView IAB Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WKWebView IAB Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		232589B3D86F4E46A58359F8 /* QuartzCore.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		27C26DC0CDEF45D6A762B40E /* cmaps */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = cmaps; sourceTree = "<group>"; };
+		29249E02B0B345ACBB30F5C3 /* PDFObjc.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PDFObjc.m; path = com.radaee.cordova/PDFObjc.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A74DB56A23B400693ED3396 /* RDVThread.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDVThread.m; path = com.radaee.cordova/RDVThread.m; sourceTree = "<group>"; };
+		2E0B8134359146EC848736CC /* CDVInAppBrowserNavigationController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowserNavigationController.m; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.m"; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		3047A50F1AB8059700498E2A /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-debug.xcconfig"; path = "cordova/build-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* WKWebView IAB Test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView IAB Test-Prefix.pch"; sourceTree = "<group>"; };
+		37993838634A4B15A5DC4119 /* SearchResultTableViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SearchResultTableViewController.m; path = com.radaee.cordova/SearchResultTableViewController.m; sourceTree = "<group>"; };
+		3B0C4B3A1535494E800F2495 /* RDToolBar.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDToolBar.h; path = com.radaee.cordova/RDToolBar.h; sourceTree = "<group>"; };
+		3CB4F9BCB28D462C865967E8 /* CDVAssetLibraryFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVAssetLibraryFilesystem.h; path = "cordova-plugin-file/CDVAssetLibraryFilesystem.h"; sourceTree = "<group>"; };
+		3DCA737A58D44344BEB6109F /* RDVFinder.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDVFinder.m; path = com.radaee.cordova/RDVFinder.m; sourceTree = "<group>"; };
+		3E109CE9FC0F4E52A9267B2A /* RDExtendedSearch.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDExtendedSearch.m; path = com.radaee.cordova/RDExtendedSearch.m; sourceTree = "<group>"; };
+		3E285AC68F354FD9AC5CC297 /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
+		4075C702B428432F9AAD7929 /* RDVSel.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDVSel.h; path = com.radaee.cordova/RDVSel.h; sourceTree = "<group>"; };
+		40C2BDA096574D3CBF203A51 /* PDFHttpStream.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PDFHttpStream.m; path = com.radaee.cordova/PDFHttpStream.m; sourceTree = "<group>"; };
+		41CB51BF01B343C185EF7E94 /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		45AD71F449B54938818BB150 /* RDMoreTableViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDMoreTableViewController.m; path = com.radaee.cordova/RDMoreTableViewController.m; sourceTree = "<group>"; };
+		49CF28859FC3440C865DDBF2 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4BAA1A5ADA824B5FAE37B90C /* RDVGlobal.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDVGlobal.h; path = com.radaee.cordova/RDVGlobal.h; sourceTree = "<group>"; };
+		4CF5D72310204E29B9AC9F97 /* UviSignatureView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = UviSignatureView.h; path = com.radaee.cordova/UviSignatureView.h; sourceTree = "<group>"; };
+		4D12A4EDD3274F38BFEBCD28 /* ViewModeTableViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ViewModeTableViewController.m; path = com.radaee.cordova/ViewModeTableViewController.m; sourceTree = "<group>"; };
+		4EAE92A2912C4077AFDB49B1 /* RDToolBar.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDToolBar.m; path = com.radaee.cordova/RDToolBar.m; sourceTree = "<group>"; };
+		533E9339A9954C0BA2D49D52 /* OUTLINE_ITEM.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = OUTLINE_ITEM.m; path = com.radaee.cordova/OUTLINE_ITEM.m; sourceTree = "<group>"; };
+		53F553A5D59A4510AF8C1685 /* PDFThumbView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PDFThumbView.h; path = com.radaee.cordova/PDFThumbView.h; sourceTree = "<group>"; };
+		5741E849B3094611AD308635 /* libRDPDFLib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; name = libRDPDFLib.a; path = "WKWebView IAB Test/Plugins/com.radaee.cordova/libRDPDFLib.a"; sourceTree = "<group>"; };
+		57A66179E1D84385968EFC3D /* ReaderHandler.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ReaderHandler.h; path = com.radaee.cordova/ReaderHandler.h; sourceTree = "<group>"; };
+		5841CFE040BC4597AB4C7C84 /* CDVWKInAppBrowser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKInAppBrowser.h; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.h"; sourceTree = "<group>"; };
+		593C7DF751334B3786F35F52 /* SignatureViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SignatureViewController.m; path = com.radaee.cordova/SignatureViewController.m; sourceTree = "<group>"; };
+		5BF453E384CC4E868F50A2B5 /* RDVCache.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDVCache.m; path = com.radaee.cordova/RDVCache.m; sourceTree = "<group>"; };
+		5C72C641B0304AAFA71B214E /* CDVInAppBrowserNavigationController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowserNavigationController.h; path = "cordova-plugin-inappbrowser/CDVInAppBrowserNavigationController.h"; sourceTree = "<group>"; };
+		5C871A05617C41E7B1E858C1 /* RDUtils.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDUtils.h; path = com.radaee.cordova/RDUtils.h; sourceTree = "<group>"; };
+		5E28D671F5C44843B88B0F6C /* CDVInAppBrowserOptions.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowserOptions.m; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.m"; sourceTree = "<group>"; };
+		695302E001A845ABA356BF90 /* RDVThread.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDVThread.h; path = com.radaee.cordova/RDVThread.h; sourceTree = "<group>"; };
+		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = "WKWebView IAB Test/CDVLaunchScreen.storyboard"; sourceTree = SOURCE_ROOT; };
+		6E5EE88E98E14BD4850DA83F /* PDFGridView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PDFGridView.h; path = com.radaee.cordova/PDFGridView.h; sourceTree = "<group>"; };
+		6F27DE3E0AA14CE9B6AE2882 /* RDVSel.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDVSel.m; path = com.radaee.cordova/RDVSel.m; sourceTree = "<group>"; };
+		70D5A1B56AB54A72A18624AE /* CDVUIInAppBrowser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVUIInAppBrowser.h; path = "cordova-plugin-inappbrowser/CDVUIInAppBrowser.h"; sourceTree = "<group>"; };
+		76819EDC3F7544C291CE1022 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowser.h; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; };
+		771D4C6C02F54B6E93B4B8FE /* CDVUIInAppBrowser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVUIInAppBrowser.m; path = "cordova-plugin-inappbrowser/CDVUIInAppBrowser.m"; sourceTree = "<group>"; };
+		797F9FC682E94A8FBA2E3C18 /* PDFLayoutView.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PDFLayoutView.m; path = com.radaee.cordova/PDFLayoutView.m; sourceTree = "<group>"; };
+		7D2EBE8558BC493CAB2F7E46 /* SignatureViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SignatureViewController.h; path = com.radaee.cordova/SignatureViewController.h; sourceTree = "<group>"; };
+		7EA99C12E4CE4E92B03F2193 /* RDVGlobal.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDVGlobal.m; path = com.radaee.cordova/RDVGlobal.m; sourceTree = "<group>"; };
+		7F6B84DD6055409B91B624B1 /* UviSignatureView.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = UviSignatureView.m; path = com.radaee.cordova/UviSignatureView.m; sourceTree = "<group>"; };
+		829D290E1DF1465DBEE4CA77 /* DrawModeTableViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = DrawModeTableViewController.h; path = com.radaee.cordova/DrawModeTableViewController.h; sourceTree = "<group>"; };
+		835F32DC48CB4007B4845DB1 /* PDFIOS.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PDFIOS.h; path = com.radaee.cordova/PDFIOS.h; sourceTree = "<group>"; };
+		836BC4DCCFA6421F8157B345 /* RDUtils.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDUtils.m; path = com.radaee.cordova/RDUtils.m; sourceTree = "<group>"; };
+		8AF117609C9F4C0A86715F4A /* RDVCache.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDVCache.h; path = com.radaee.cordova/RDVCache.h; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* WKWebView IAB Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "WKWebView IAB Test-Info.plist"; path = "WKWebView IAB Test/WKWebView IAB Test-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
+		8E49CD2458F84E76940B6E6C /* RDVCanvas.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDVCanvas.m; path = com.radaee.cordova/RDVCanvas.m; sourceTree = "<group>"; };
+		91AFEF4FFAFA4B5691C1C524 /* Images.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		91B537B0B3E5477FBB313071 /* RDVPage.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDVPage.h; path = com.radaee.cordova/RDVPage.h; sourceTree = "<group>"; };
+		9483721639C948998E19A03B /* BookmarkTableViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = BookmarkTableViewController.m; path = com.radaee.cordova/BookmarkTableViewController.m; sourceTree = "<group>"; };
+		94F44D77F46D43FCAD2A31BC /* RDAnnotListViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDAnnotListViewController.h; path = com.radaee.cordova/RDAnnotListViewController.h; sourceTree = "<group>"; };
+		988F823727C849408ED1F0AA /* RDVLayout.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDVLayout.h; path = com.radaee.cordova/RDVLayout.h; sourceTree = "<group>"; };
+		9B1D0EF91E954218BC07AC66 /* PDFHttpStream.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PDFHttpStream.h; path = com.radaee.cordova/PDFHttpStream.h; sourceTree = "<group>"; };
+		9DC1B1C81C8942679DAAA89C /* RadaeePDFPlugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RadaeePDFPlugin.m; path = com.radaee.cordova/RadaeePDFPlugin.m; sourceTree = "<group>"; };
+		A5D0A307C0034882899E7EE9 /* Roboto-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		A6603353E4EF403987AEC275 /* BookmarkTableViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = BookmarkTableViewController.h; path = com.radaee.cordova/BookmarkTableViewController.h; sourceTree = "<group>"; };
+		A7417BBF9FC747E39B8770DC /* SearchResultTableViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SearchResultTableViewController.h; path = com.radaee.cordova/SearchResultTableViewController.h; sourceTree = "<group>"; };
+		A81DD46907C4457ABD3E408C /* CDVFile.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVFile.m; path = "cordova-plugin-file/CDVFile.m"; sourceTree = "<group>"; };
+		A8487C249EF2480F96F22716 /* CDVLocalFilesystem.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVLocalFilesystem.h; path = "cordova-plugin-file/CDVLocalFilesystem.h"; sourceTree = "<group>"; };
+		A985752D31824E7084892038 /* RDVPage.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDVPage.m; path = com.radaee.cordova/RDVPage.m; sourceTree = "<group>"; };
+		A9D2501188944853920FEE67 /* OutLineViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = OutLineViewController.m; path = com.radaee.cordova/OutLineViewController.m; sourceTree = "<group>"; };
+		ACB0CE9BAD8146758D737890 /* CDVInAppBrowser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVInAppBrowser.m; path = "cordova-plugin-inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; };
+		ADE9CF9A3655457B954E2C6D /* TextAnnotViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TextAnnotViewController.h; path = com.radaee.cordova/TextAnnotViewController.h; sourceTree = "<group>"; };
+		AFC554FFABAE433AAD9CD3E0 /* RDMoreTableViewController.xib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = file.xib; path = RDMoreTableViewController.xib; sourceTree = "<group>"; };
+		AFD9ABB2D915462E8934577D /* PDFReflowView.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PDFReflowView.m; path = com.radaee.cordova/PDFReflowView.m; sourceTree = "<group>"; };
+		B22C00FED07C45A0B5825CE7 /* DrawModeTableViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = DrawModeTableViewController.m; path = com.radaee.cordova/DrawModeTableViewController.m; sourceTree = "<group>"; };
+		B63ABFFFFC9B4DF28EB27126 /* RadaeePDFPlugin.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RadaeePDFPlugin.h; path = com.radaee.cordova/RadaeePDFPlugin.h; sourceTree = "<group>"; };
+		B9AE27008E6A444391762DC8 /* OutLineViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = OutLineViewController.h; path = com.radaee.cordova/OutLineViewController.h; sourceTree = "<group>"; };
+		BAB3BD91C8E349569B7A1B21 /* CDVDevice.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVDevice.m; path = "cordova-plugin-device/CDVDevice.m"; sourceTree = "<group>"; };
+		BCAE200CAF594BD18BA8A650 /* RDFormManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDFormManager.m; path = com.radaee.cordova/RDFormManager.m; sourceTree = "<group>"; };
+		BCE56F996DAF4E50BE171E57 /* PDFObjc.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PDFObjc.h; path = com.radaee.cordova/PDFObjc.h; sourceTree = "<group>"; };
+		BED4AFC024204D06AE86ED30 /* ActionStackManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ActionStackManager.h; path = com.radaee.cordova/ActionStackManager.h; sourceTree = "<group>"; };
+		C05C9046220B4B6AA2E80306 /* CDVFile.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVFile.h; path = "cordova-plugin-file/CDVFile.h"; sourceTree = "<group>"; };
+		C24B986428FE4871AB6F55D2 /* CDVWKInAppBrowserUIDelegate.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVWKInAppBrowserUIDelegate.h; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.h"; sourceTree = "<group>"; };
+		C3682F67B7304E4393A73FA1 /* PDFOffScreenView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PDFOffScreenView.h; path = com.radaee.cordova/PDFOffScreenView.h; sourceTree = "<group>"; };
+		C71575783E15455592CD8DE8 /* RDVCanvas.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDVCanvas.h; path = com.radaee.cordova/RDVCanvas.h; sourceTree = "<group>"; };
+		C9413E7A44574339B0B47BB0 /* RDMoreTableViewController.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDMoreTableViewController.h; path = com.radaee.cordova/RDMoreTableViewController.h; sourceTree = "<group>"; };
+		C9D7B3B376AD4DC2A99CADB2 /* CoreMedia.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		CBEE21388C76487A9F34FED1 /* PDFReflowView.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = PDFReflowView.h; path = com.radaee.cordova/PDFReflowView.h; sourceTree = "<group>"; };
+		CF42CB81685D4D76B85E75D9 /* CDVDevice.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVDevice.h; path = "cordova-plugin-device/CDVDevice.h"; sourceTree = "<group>"; };
+		CFB153290168409392BE766D /* fdat */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = fdat; sourceTree = "<group>"; };
+		D0F0082DC9F14075A3AF5578 /* RDVFinder.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDVFinder.h; path = com.radaee.cordova/RDVFinder.h; sourceTree = "<group>"; };
+		D23A290A6FBB4838BB07720B /* RDVLayout.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDVLayout.m; path = com.radaee.cordova/RDVLayout.m; sourceTree = "<group>"; };
+		DC5D3F4DA9DC4B44890F0BF8 /* PDFThumbView.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PDFThumbView.m; path = com.radaee.cordova/PDFThumbView.m; sourceTree = "<group>"; };
+		DE5A9E707EE147C19DAE7989 /* CDVWKInAppBrowserUIDelegate.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKInAppBrowserUIDelegate.m; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowserUIDelegate.m"; sourceTree = "<group>"; };
+		E168941A03B342D48F5ED699 /* RDLoPDFViewController.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = RDLoPDFViewController.m; path = com.radaee.cordova/RDLoPDFViewController.m; sourceTree = "<group>"; };
+		E78D20D0C59D4E51B1827ADE /* ReaderHandler.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ReaderHandler.m; path = com.radaee.cordova/ReaderHandler.m; sourceTree = "<group>"; };
+		E8586A2E6E274396BCBFE0A6 /* ActionStackManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ActionStackManager.m; path = com.radaee.cordova/ActionStackManager.m; sourceTree = "<group>"; };
+		E97B858724944EA484D2FA7C /* RDExtendedSearch.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDExtendedSearch.h; path = com.radaee.cordova/RDExtendedSearch.h; sourceTree = "<group>"; };
+		EB1024D7249D48DF974496C2 /* PDFOffScreenView.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = PDFOffScreenView.m; path = com.radaee.cordova/PDFOffScreenView.m; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		EF72DE399B6A4AC9B837B2D6 /* RDFormManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = RDFormManager.h; path = com.radaee.cordova/RDFormManager.h; sourceTree = "<group>"; };
+		F19D22F136004697AE488F85 /* CDVInAppBrowserOptions.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = CDVInAppBrowserOptions.h; path = "cordova-plugin-inappbrowser/CDVInAppBrowserOptions.h"; sourceTree = "<group>"; };
+		F48A909E01304DEB97B089C5 /* CDVLocalFilesystem.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVLocalFilesystem.m; path = "cordova-plugin-file/CDVLocalFilesystem.m"; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "WKWebView IAB Test/config.xml"; sourceTree = "<group>"; };
+		F8C4991CB62A4998A7FEB55C /* CDVWKInAppBrowser.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = CDVWKInAppBrowser.m; path = "cordova-plugin-inappbrowser/CDVWKInAppBrowser.m"; sourceTree = "<group>"; };
+		FC547D9ABB244804B9B38F51 /* OUTLINE_ITEM.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = OUTLINE_ITEM.h; path = com.radaee.cordova/OUTLINE_ITEM.h; sourceTree = "<group>"; };
+		A7D0233816B14A99BB29FF36 /* CDVStatusBar.m */ = {isa = PBXFileReference; name = "CDVStatusBar.m"; path = "cordova-plugin-statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		01141C28906345BAB25702F6 /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				86C3C91D3C054607BFC70C53 /* libz.tbd in Frameworks */,
+				269B3B40AF15489586B4DFE2 /* libRDPDFLib.a in Frameworks */,
+				D8461DBCF06C4CE3A39A9C99 /* CoreMedia.framework in Frameworks */,
+				C6E1602BED9C42D8A7AC3946 /* QuartzCore.framework in Frameworks */,
+				F108C6502EF14ED8A4950E21 /* libc++.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "WKWebView IAB Test/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* WKWebView IAB Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* WKWebView IAB Test-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+				ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */,
+			);
+			name = "Other Sources";
+			path = "WKWebView IAB Test";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0207DA571B56EA530066E2B4 /* Images.xcassets */,
+				3047A50E1AB8057F00498E2A /* config */,
+				8D1107310486CEB800E47090 /* WKWebView IAB Test-Info.plist */,
+				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
+				91AFEF4FFAFA4B5691C1C524 /* Images.xcassets */,
+				AFC554FFABAE433AAD9CD3E0 /* RDMoreTableViewController.xib */,
+				27C26DC0CDEF45D6A762B40E /* cmaps */,
+				CFB153290168409392BE766D /* fdat */,
+				A5D0A307C0034882899E7EE9 /* Roboto-Black.ttf */,
+				032EC096F8B04D47AC1B4DCE /* Roboto-Bold.ttf */,
+				41CB51BF01B343C185EF7E94 /* Roboto-Light.ttf */,
+				17C0D2E0B75142B0971ED418 /* Roboto-Medium.ttf */,
+				49CF28859FC3440C865DDBF2 /* Roboto-Regular.ttf */,
+				3E285AC68F354FD9AC5CC297 /* Roboto-RegularItalic.ttf */,
+			);
+			name = Resources;
+			path = "WKWebView IAB Test/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				162983D6A489485CB3B2EC4A /* libz.tbd */,
+				5741E849B3094611AD308635 /* libRDPDFLib.a */,
+				C9D7B3B376AD4DC2A99CADB2 /* CoreMedia.framework */,
+				232589B3D86F4E46A58359F8 /* QuartzCore.framework */,
+				02310967C25B4EF987FE1047 /* libc++.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+				907D8124214C687600058A10 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3047A50E1AB8057F00498E2A /* config */ = {
+			isa = PBXGroup;
+			children = (
+				3047A50F1AB8059700498E2A /* build-debug.xcconfig */,
+				3047A5101AB8059700498E2A /* build-release.xcconfig */,
+				3047A5111AB8059700498E2A /* build.xcconfig */,
+			);
+			name = config;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				ACB0CE9BAD8146758D737890 /* CDVInAppBrowser.m */,
+				5E28D671F5C44843B88B0F6C /* CDVInAppBrowserOptions.m */,
+				2E0B8134359146EC848736CC /* CDVInAppBrowserNavigationController.m */,
+				771D4C6C02F54B6E93B4B8FE /* CDVUIInAppBrowser.m */,
+				F8C4991CB62A4998A7FEB55C /* CDVWKInAppBrowser.m */,
+				DE5A9E707EE147C19DAE7989 /* CDVWKInAppBrowserUIDelegate.m */,
+				76819EDC3F7544C291CE1022 /* CDVInAppBrowser.h */,
+				F19D22F136004697AE488F85 /* CDVInAppBrowserOptions.h */,
+				5C72C641B0304AAFA71B214E /* CDVInAppBrowserNavigationController.h */,
+				70D5A1B56AB54A72A18624AE /* CDVUIInAppBrowser.h */,
+				5841CFE040BC4597AB4C7C84 /* CDVWKInAppBrowser.h */,
+				C24B986428FE4871AB6F55D2 /* CDVWKInAppBrowserUIDelegate.h */,
+				BAB3BD91C8E349569B7A1B21 /* CDVDevice.m */,
+				CF42CB81685D4D76B85E75D9 /* CDVDevice.h */,
+				9DC1B1C81C8942679DAAA89C /* RadaeePDFPlugin.m */,
+				E168941A03B342D48F5ED699 /* RDLoPDFViewController.m */,
+				EB1024D7249D48DF974496C2 /* PDFOffScreenView.m */,
+				9483721639C948998E19A03B /* BookmarkTableViewController.m */,
+				533E9339A9954C0BA2D49D52 /* OUTLINE_ITEM.m */,
+				A9D2501188944853920FEE67 /* OutLineViewController.m */,
+				083B3743F2384948BFB606A0 /* TextAnnotViewController.m */,
+				4D12A4EDD3274F38BFEBCD28 /* ViewModeTableViewController.m */,
+				AFD9ABB2D915462E8934577D /* PDFReflowView.m */,
+				06AB3F7C2D8A4513A12B054B /* PDFGridView.m */,
+				DC5D3F4DA9DC4B44890F0BF8 /* PDFThumbView.m */,
+				40C2BDA096574D3CBF203A51 /* PDFHttpStream.m */,
+				D23A290A6FBB4838BB07720B /* RDVLayout.m */,
+				8E49CD2458F84E76940B6E6C /* RDVCanvas.m */,
+				5BF453E384CC4E868F50A2B5 /* RDVCache.m */,
+				3DCA737A58D44344BEB6109F /* RDVFinder.m */,
+				7EA99C12E4CE4E92B03F2193 /* RDVGlobal.m */,
+				797F9FC682E94A8FBA2E3C18 /* PDFLayoutView.m */,
+				6F27DE3E0AA14CE9B6AE2882 /* RDVSel.m */,
+				4EAE92A2912C4077AFDB49B1 /* RDToolBar.m */,
+				A985752D31824E7084892038 /* RDVPage.m */,
+				2A74DB56A23B400693ED3396 /* RDVThread.m */,
+				29249E02B0B345ACBB30F5C3 /* PDFObjc.m */,
+				45AD71F449B54938818BB150 /* RDMoreTableViewController.m */,
+				1942A68289BB45FFA615B06E /* RDAnnotListViewController.m */,
+				B22C00FED07C45A0B5825CE7 /* DrawModeTableViewController.m */,
+				E78D20D0C59D4E51B1827ADE /* ReaderHandler.m */,
+				3E109CE9FC0F4E52A9267B2A /* RDExtendedSearch.m */,
+				37993838634A4B15A5DC4119 /* SearchResultTableViewController.m */,
+				BCAE200CAF594BD18BA8A650 /* RDFormManager.m */,
+				836BC4DCCFA6421F8157B345 /* RDUtils.m */,
+				E8586A2E6E274396BCBFE0A6 /* ActionStackManager.m */,
+				593C7DF751334B3786F35F52 /* SignatureViewController.m */,
+				7F6B84DD6055409B91B624B1 /* UviSignatureView.m */,
+				B63ABFFFFC9B4DF28EB27126 /* RadaeePDFPlugin.h */,
+				0ECC36DA2AF44DB898256D15 /* RDLoPDFViewController.h */,
+				C3682F67B7304E4393A73FA1 /* PDFOffScreenView.h */,
+				A6603353E4EF403987AEC275 /* BookmarkTableViewController.h */,
+				FC547D9ABB244804B9B38F51 /* OUTLINE_ITEM.h */,
+				B9AE27008E6A444391762DC8 /* OutLineViewController.h */,
+				ADE9CF9A3655457B954E2C6D /* TextAnnotViewController.h */,
+				088023EBE4894BAABD6C29F5 /* ViewModeTableViewController.h */,
+				CBEE21388C76487A9F34FED1 /* PDFReflowView.h */,
+				6E5EE88E98E14BD4850DA83F /* PDFGridView.h */,
+				53F553A5D59A4510AF8C1685 /* PDFThumbView.h */,
+				9B1D0EF91E954218BC07AC66 /* PDFHttpStream.h */,
+				988F823727C849408ED1F0AA /* RDVLayout.h */,
+				C71575783E15455592CD8DE8 /* RDVCanvas.h */,
+				8AF117609C9F4C0A86715F4A /* RDVCache.h */,
+				D0F0082DC9F14075A3AF5578 /* RDVFinder.h */,
+				4BAA1A5ADA824B5FAE37B90C /* RDVGlobal.h */,
+				15F3A8E914A648F9AD2ADB35 /* PDFLayoutView.h */,
+				4075C702B428432F9AAD7929 /* RDVSel.h */,
+				3B0C4B3A1535494E800F2495 /* RDToolBar.h */,
+				91B537B0B3E5477FBB313071 /* RDVPage.h */,
+				695302E001A845ABA356BF90 /* RDVThread.h */,
+				BCE56F996DAF4E50BE171E57 /* PDFObjc.h */,
+				835F32DC48CB4007B4845DB1 /* PDFIOS.h */,
+				C9413E7A44574339B0B47BB0 /* RDMoreTableViewController.h */,
+				94F44D77F46D43FCAD2A31BC /* RDAnnotListViewController.h */,
+				829D290E1DF1465DBEE4CA77 /* DrawModeTableViewController.h */,
+				57A66179E1D84385968EFC3D /* ReaderHandler.h */,
+				E97B858724944EA484D2FA7C /* RDExtendedSearch.h */,
+				A7417BBF9FC747E39B8770DC /* SearchResultTableViewController.h */,
+				EF72DE399B6A4AC9B837B2D6 /* RDFormManager.h */,
+				5C871A05617C41E7B1E858C1 /* RDUtils.h */,
+				BED4AFC024204D06AE86ED30 /* ActionStackManager.h */,
+				7D2EBE8558BC493CAB2F7E46 /* SignatureViewController.h */,
+				4CF5D72310204E29B9AC9F97 /* UviSignatureView.h */,
+				A81DD46907C4457ABD3E408C /* CDVFile.m */,
+				F48A909E01304DEB97B089C5 /* CDVLocalFilesystem.m */,
+				18743F5F7B0D463BA9C31C31 /* CDVAssetLibraryFilesystem.m */,
+				C05C9046220B4B6AA2E80306 /* CDVFile.h */,
+				A8487C249EF2480F96F22716 /* CDVLocalFilesystem.h */,
+				3CB4F9BCB28D462C865967E8 /* CDVAssetLibraryFilesystem.h */,
+				A7D0233816B14A99BB29FF36 /* CDVStatusBar.m */,
+				01141C28906345BAB25702F6 /* CDVStatusBar.h */,
+			);
+			name = Plugins;
+			path = "WKWebView IAB Test/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* WKWebView IAB Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WKWebView IAB Test" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "WKWebView IAB Test";
+			productName = "WKWebView IAB Test";
+			productReference = 1D6058910D05DD3D006BFB54 /* WKWebView IAB Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = B2QS5QLTR3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WKWebView IAB Test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* WKWebView IAB Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		907D8124214C687600058A10 /* Cordova.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cordova.framework;
+			remoteRef = 907D8123214C687600058A10 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
+				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
+				E402D4E4268644B3ACD52CD9 /* Images.xcassets in Resources */,
+				CB84165C932E4F85B026808C /* RDMoreTableViewController.xib in Resources */,
+				ECD2CA97AD8D475C997F9709 /* cmaps in Resources */,
+				B8687C50C0704C84A344BD98 /* fdat in Resources */,
+				68C5D636F53B4579BED4BFE9 /* Roboto-Black.ttf in Resources */,
+				FBA0078B87F1407F9F2342E8 /* Roboto-Bold.ttf in Resources */,
+				56D8F04D007D40A69EEF2849 /* Roboto-Light.ttf in Resources */,
+				FF9FB9C40C73467F80F494CE /* Roboto-Medium.ttf in Resources */,
+				5C6CE143B09E46D4BD95C8E3 /* Roboto-Regular.ttf in Resources */,
+				21C0B98CD5C74DFB92433D50 /* Roboto-RegularItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/WKWebView IAB Test/Scripts/copy-www-build-step.sh\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				504BB2A655F74819A3622538 /* CDVInAppBrowser.m in Sources */,
+				5AF3D7335FD64FAEBE39DBD0 /* CDVInAppBrowserOptions.m in Sources */,
+				6BAD3BDB44DC44AABFD82F26 /* CDVInAppBrowserNavigationController.m in Sources */,
+				A22E520F53BE428887ED425E /* CDVUIInAppBrowser.m in Sources */,
+				FC0082A8BC2F40069D673AD5 /* CDVWKInAppBrowser.m in Sources */,
+				9004342E2F1D450398607B3B /* CDVWKInAppBrowserUIDelegate.m in Sources */,
+				51A8D66B6FFC484AB95ED63B /* CDVDevice.m in Sources */,
+				FB98A11812BA44D48DE266A3 /* RadaeePDFPlugin.m in Sources */,
+				0160E44EAEEA4BFD86A4F421 /* RDLoPDFViewController.m in Sources */,
+				F907D9BA141148429D768C63 /* PDFOffScreenView.m in Sources */,
+				82EC46E0247B4A6E9F76F661 /* BookmarkTableViewController.m in Sources */,
+				9AFBD500EC7742CF8E9DB4D7 /* OUTLINE_ITEM.m in Sources */,
+				4F6FF38C38044DABA4833BB6 /* OutLineViewController.m in Sources */,
+				A2962EC459EB4C038FBF2D5E /* TextAnnotViewController.m in Sources */,
+				6C3E971703334BA0BAD34783 /* ViewModeTableViewController.m in Sources */,
+				AC41090D04BE4E1F9BEFA120 /* PDFReflowView.m in Sources */,
+				5D787AA1A9334F6EB487D48E /* PDFGridView.m in Sources */,
+				120F874D6D3448829D4C73B6 /* PDFThumbView.m in Sources */,
+				851C9CD1E9EF47B798125933 /* PDFHttpStream.m in Sources */,
+				9548DFD87C5A4D0F8A8967BA /* RDVLayout.m in Sources */,
+				C438FB03343B44F7B725B129 /* RDVCanvas.m in Sources */,
+				17B6667121224BA3B6D85385 /* RDVCache.m in Sources */,
+				E1DF9E6FB6EC48E39D2A6285 /* RDVFinder.m in Sources */,
+				27CC5DD76D554E729C944D45 /* RDVGlobal.m in Sources */,
+				1824F554536C4509B5F37370 /* PDFLayoutView.m in Sources */,
+				33607B1E916E453499412ACC /* RDVSel.m in Sources */,
+				C1FB3CA4711E4FE1826BE8F1 /* RDToolBar.m in Sources */,
+				2F8A890EC4DF49F6B59F99D3 /* RDVPage.m in Sources */,
+				B246CF5545F44295B3E80A18 /* RDVThread.m in Sources */,
+				04F0D97DA21248D5ACA895FD /* PDFObjc.m in Sources */,
+				4FAB0D89E5C849E181E817AA /* RDMoreTableViewController.m in Sources */,
+				A4E8806A387147DCA3D5235D /* RDAnnotListViewController.m in Sources */,
+				722A49C8A45F42358806F5A0 /* DrawModeTableViewController.m in Sources */,
+				8A654BCDC669412CA42C8DA2 /* ReaderHandler.m in Sources */,
+				367E1C3AA2E5441EA80375E4 /* RDExtendedSearch.m in Sources */,
+				F5C89622B2904551A729750E /* SearchResultTableViewController.m in Sources */,
+				9A8106841C8840D282706965 /* RDFormManager.m in Sources */,
+				D48531741B174D12883BAFEF /* RDUtils.m in Sources */,
+				CF9066364EC644079DF1E04A /* ActionStackManager.m in Sources */,
+				2DA78AD817484984A14F2F45 /* SignatureViewController.m in Sources */,
+				D21380DDAA334558BBF178F8 /* UviSignatureView.m in Sources */,
+				CA4E8FE3220D40E1A96EE2A1 /* CDVFile.m in Sources */,
+				758B86BB29E247DDAF7D8FD0 /* CDVLocalFilesystem.m in Sources */,
+				5EE0CCE2F196494E900DDA7F /* CDVAssetLibraryFilesystem.m in Sources */,
+				BA7EB9D30A6B4C1ABBEF33C1 /* CDVStatusBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A50F1AB8059700498E2A /* build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = B2QS5QLTR3;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WKWebView IAB Test/WKWebView IAB Test-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "WKWebView IAB Test/WKWebView IAB Test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)/Plugins/com.radaee.cordova\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bstest.mpoah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5101AB8059700498E2A /* build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = B2QS5QLTR3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WKWebView IAB Test/WKWebView IAB Test-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "WKWebView IAB Test/WKWebView IAB Test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)/Plugins/com.radaee.cordova\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bstest.mpoah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.cordova.inappbrowser.test.wkwebview;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WK_WEB_VIEW_ONLY = 0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3047A5111AB8059700498E2A /* build.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.cordova.inappbrowser.test.wkwebview;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				WK_WEB_VIEW_ONLY = 0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "WKWebView IAB Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "WKWebView IAB Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

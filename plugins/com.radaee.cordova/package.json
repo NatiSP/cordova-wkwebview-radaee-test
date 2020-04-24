@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/gearit/RadaeePDF-Cordova.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/gearit/RadaeePDF-Cordova.git",
+        "spec": "git+https://github.com/gearit/RadaeePDF-Cordova.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:gearit/RadaeePDF-Cordova.git",
+          "sshUrl": "git+ssh://git@github.com/gearit/RadaeePDF-Cordova.git",
+          "httpsUrl": "git+https://github.com/gearit/RadaeePDF-Cordova.git",
+          "gitUrl": "git://github.com/gearit/RadaeePDF-Cordova.git",
+          "shortcut": "github:gearit/RadaeePDF-Cordova",
+          "directUrl": "https://raw.githubusercontent.com/gearit/RadaeePDF-Cordova/master/package.json"
+        }
+      },
+      "/Users/NTSistemas/Desktop/WKWebKit Radaee Demo/cordova-plugin-inappbrowser-wkwebview-test"
+    ]
+  ],
+  "_from": "git+https://github.com/gearit/RadaeePDF-Cordova.git",
+  "_id": "com.radaee.cordova@1.3.2",
+  "_inCache": true,
+  "_location": "/com.radaee.cordova",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/gearit/RadaeePDF-Cordova.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/gearit/RadaeePDF-Cordova.git",
+    "spec": "git+https://github.com/gearit/RadaeePDF-Cordova.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:gearit/RadaeePDF-Cordova.git",
+      "sshUrl": "git+ssh://git@github.com/gearit/RadaeePDF-Cordova.git",
+      "httpsUrl": "git+https://github.com/gearit/RadaeePDF-Cordova.git",
+      "gitUrl": "git://github.com/gearit/RadaeePDF-Cordova.git",
+      "shortcut": "github:gearit/RadaeePDF-Cordova",
+      "directUrl": "https://raw.githubusercontent.com/gearit/RadaeePDF-Cordova/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/gearit/RadaeePDF-Cordova.git#8e680b3464a21336c8e3c88298f13d189cac26f1",
+  "_shasum": "c08d2541b938145fdca29b60a5f633868c7ca614",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/gearit/RadaeePDF-Cordova.git",
+  "_where": "/Users/NTSistemas/Desktop/WKWebKit Radaee Demo/cordova-plugin-inappbrowser-wkwebview-test",
+  "author": {
+    "name": "Gear.it S.R.L."
+  },
+  "bugs": {
+    "url": "https://github.com/gearit/RadaeePDF-Cordova/issues"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "RadaeePDF reader cordova plugin",
+  "devDependencies": {},
+  "engines": [
+    {
+      "name": "cordova-radaee",
+      "version": ">=3.0.0"
+    }
+  ],
+  "gitHead": "8e680b3464a21336c8e3c88298f13d189cac26f1",
+  "homepage": "https://github.com/gearit/RadaeePDF-Cordova#readme",
+  "keywords": [
+    "cordova",
+    "radaee",
+    "pdf",
+    "android pdf"
+  ],
+  "name": "com.radaee.cordova",
+  "optionalDependencies": {},
+  "readme": "# RadaeePDF-Cordova Plugin\n\nThe repository has been moved to https://github.com/gearit/RadaeePDF-Cordova\n\nThe new one contains sources for both Android and iOS.\n\nOfficial information page: http://www.radaeepdf.com/download/cordova-plugin\n\n## License\n\nThis plugin is released under the Apache 2.0 license\n\n**Only the plugin source code is under the license Apache 2.0, the library included in the plugin follow the license of his owner, please check it on:**\nhttp://www.radaeepdf.com/ecommerce/technical-specification\n\nGEAR.it and Radaee Studio distribute the plugin as-is for free.\nGEAR.it is the maintainer of the plug-in project.\n\nIf you, as user and developer need new features or fixes you shall submit them here on GitHub.\n\n## Installation\n\n    cordova plugin add https://github.com/gearit/RadaeePDF-Cordova.git\n    \n## Usage\n\n1. Create the app using the demo package name, to be able to test all the features (standard, professional and premium).  \n   `cordova create RadaeePDF-Cordova com.radaee.reader RadaeePDF-Cordova` (Android)  \n   `cordova create RadaeePDF-Cordova com.radaee.pdf.PDFViewer RadaeePDF-Cordova` (iOS)\n\t\n2. Add the android/iOS platform.  \n   `cd RadaeePDF-Cordova`    \n\t`cordova platform add android@latest --save` and/or `cordova platform add ios --save`\n\t\n3. Add the plugin.  \n   `cordova plugin add https://github.com/gearit/RadaeePDF-Cordova.git --save`\n\t\n4. Build the app.  \n   `cordova build`\t\n\nAfter doing these steps, you will have a ready to use project.\n\n## Compatibility\n\nWe now support Cordova 6,7,8 and 9 for both Android and iOS platforms.  \nFor cordova-android, latest supported version is 8.0.0, We support cordova-android@7 from version 7.1.4 onwards.  \nMake sure to update to latest plugin version and to use the command `cordova platform add android@latest`\n\n## The JavaScript Interfaces\n\n### License Activation\n\nFor Android, you need to call this only when you have your own license, as the demo project already have a demo-premium license.\nFor iOS, you have to call it before calling any other interface.\n\t\n```javascript\nRadaeePDFPlugin.activateLicense(\n\t{\n\t\tlicenseType: 0, //0: for standard license, 1: for professional license, 2: for premium license\n\t\tcompany: \"\", //the company name you entered during license activation\n\t\temail: \"\", //the email you entered during license activation\n\t\tkey: \"\" //you license activation key\n\t},\n\tfunction(message) { // Callback for successful opening.\n\t\t console.log(\"Success: \" + message);\n\t},\n\tfunction(err){ // Callback in case of error.\n\t\tconsole.log(\"Failure: \" + err);\n\t});\n```\n\n### Open PDF from file system\n\n```javascript\nRadaeePDFPlugin.open(\n\t{\n\t\turl: \"\", //The path of the pdf to open\n\t\tpassword: \"\", //password if needed\n\t\tengine: 0 //for Android, 0: for GPU based layout(OpenGL), 1: for CPU based layout.\n\t},\n\tfunction(message) {\n\t\t console.log(\"Success: \" + message);\n\t},\n\tfunction(err){\n\t\tconsole.log(\"Failure: \" + err);\n    });\n```\n\n- **Example**:\n\n\t```javascript\n\turl: \"file:///mnt/sdcard/Download/Test.pdf\", //in case of pdf is in the device file system\n\t```\n\n\t```javascript\n\turl: \"http://www.radaeepdf.com/documentation/MRBrochoure.pdf\", //in case of pdf is on a remote server\n\t```\n\n### Open PDF from assets\n\n```javascript\nRadaeePDFPlugin.openFromAssets(\n\t{\n\t\turl: \"Test.PDF\", //the pdf name\n\t\tpassword: \"\" //password if needed\n\t},\n\tfunction(message) {\n\t\t console.log(\"Success: \" + message);\n\t},\n\tfunction(err){\n\t\tconsole.log(\"Failure: \" + err);\n    });\n```\n\n### Get last opened file state\n\nReturns the state of the last opened pdf, it can be:\n- File has not been modified.\n- File has been modified but not saved. (Only for Android)\n- File has been modified and saved. \n\n```javascript\nRadaeePDFPlugin.getFileState(\n\t{},\n\tfunction(message) {\n\t\t console.log(\"Success: \" + message);\n\t},\n\tfunction(err){\n\t\tconsole.log(\"Failure: \" + err);\n    });\n```  \n\nFor more examples, check demo/js/index.js  \n\n### Framework Rendering\n\n- Android: OpenGL and CPU rendering flavors.\n- iOS: CALayer based tiled rendering.\n\nRadaeePDF library version included:\n- Android: v3.53.1\n- iOS: v3.58\n\nOriginal development: \n- This plugin was created based on [PaoloMessina/RadaeeCordova](https://github.com/PaoloMessina/RadaeeCordova)  \n   www.paolomessina.it, email: paolo.messina.it@gmail.com\n\nMore information about RadaeePDF SDK on http://www.radaeepdf.com.  \nFor guide please check [Knowledge Base articles](http://www.radaeepdf.com/support/knowledge-base?view=kb&catid=4)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gearit/RadaeePDF-Cordova.git"
+  },
+  "version": "1.3.2"
+}

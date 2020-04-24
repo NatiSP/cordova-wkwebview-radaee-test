@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IAB Content Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="text/javascript" src="cordova.js"></script>
+            <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+            <script type="text/javascript" src="plugins/com.radaee.cordova/www/RadaeePDFPlugin.js"></script>
+            <script type="text/javascript" src="plugin/cordova-plugin-file/ios/FileSystem.js"></script>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">WKWebView Test</a>
+                </div>
+            </div>
+        </nav>
+        <h1>Title</h1>
+        <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas non accumsan est. Aliquam vitae facilisis tortor. Donec hendrerit lectus sit amet turpis hendrerit, vel malesuada metus dapibus. In dui turpis, bibendum quis pretium at, pretium sit amet sapien. Sed nunc odio, venenatis sit amet libero id, gravida pharetra enim. Curabitur a magna vitae mauris sollicitudin euismod in sit amet libero. Aenean sed rutrum nunc, vitae porttitor est.</p>
+
+        <p>Platform: <span id="platform"></span></p>
+        <p>Webview: <span id="webview"></span></p>
+
+        <button onclick="openPDF()">Open PDF</button>
+        
+        <hr/>
+        <div id="log"></div>
+        
+        <script type="text/javascript">
+
+            function showPlatformDetails(){
+                var webView, platform;
+                if (navigator.userAgent.match("Apple")) {
+                    platform = "iOS";
+                    if (window.webkit && window.webkit.messageHandlers) {
+                        webView = "WKWebView";
+                    } else {
+                        webView = "UIWebView";
+                    }
+                } else {
+                    platform = "Android";
+                    if (navigator.userAgent.toLowerCase().indexOf('crosswalk') > -1) {
+                        webView = "Crosswalk";
+                    } else {
+                        webView = "System";
+                    }
+                }
+                document.getElementById('platform').innerHTML = platform;
+                document.getElementById('webview').innerHTML = webView;
+            }
+
+            function onReady(){
+                console.log("ready");
+                showPlatformDetails();
+            }
+        </script>
+
+        <script type="text/javascript" src="js/openPDF.js"></script>
+    </body>
+</html>
+
